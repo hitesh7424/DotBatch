@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute to Myself</title>
-</head>
-<body>
-    <h1>Hitesh Kumar Gaurav</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Welcome to CodeHelp</h1>
+    <h2>Contack Us Form</h2>
 
-    <p>Creater of this Page</p>
+    <section>
+      <form action method="POST">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Your Name"
+          required
+        /><br />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Your Email"
+          required
+        />
+        <br />
+        <label for="contact-number">Contact Number</label>
+        <input type="number" name="contact-number" />
+        <br />
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="notspecify">Rather Not Say</option>
+        </select>
+        <br />
+        <label for="date-of-birth">Date Of Birth</label>
+        <input type="date" name="date-of-birth" />
+        <br />
+        Rating
+        <input type="radio" name="rating" id="1" />
+        <label for="1">1</label>
+        <input type="radio" name="rating" id="2" />
+        <label for="2">2</label>
+        <input type="radio" name="rating" id="3" />
+        <label for="3">3</label>
+        <input type="radio" name="rating" id="4" />
+        <label for="4">4</label>
+        <input type="radio" name="rating" id="5" />
+        <label for="5">5</label>
 
-    <img src="hitesh.jpg" alt="Hitesh-Photo" id="hiteshphoto" width="40%" loading="lazy"><br>
-    <label for="hiteshphoto">A photograph of Hitesh Kumar Gaurav</label>
-
-    <h2>Biography</h2>
-    <p>
-        Hitesh Kumar Gaurav is a Brilliant student who is studying Robotics and has gain 
-    </p>
-    
-</body>
+        <br />
+        <label for="message">Enter Your Message</label><br />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter Your Message"
+          rows="5"
+          cols="35"
+        ></textarea>
+        <br />
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+    <br />
+    <footer>
+      <a href="https://www.youtube.com/@LoveBabbar" target="_blank"
+        ><img src="youtube.png" alt="youtube" width="40" height="40"
+      /></a>
+      <a href="https://www.instagram.com/lovebabbar1/" target="_blank"
+        ><img src="insta.jpg" alt="instagram" width="40" height="40"
+      /></a>
+      <a href="https://t.me/+EEoZWavpShZmM2Y1" target="_blank"
+        ><img src="telegram.png" alt="telegram" width="40" height="40"
+      /></a>
+    </footer>
+  </body>
 </html>
