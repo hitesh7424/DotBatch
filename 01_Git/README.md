@@ -227,8 +227,8 @@
 
 1. **Setup Git (Local):**
    ```bash
-   git config --global user.name "hitesh7424"
-   git config --global user.email "hitesh164722@gmail.com"
+   git config --global user.name "userName"
+   git config --global user.email "email@example.com"
    ```
 
 2. **Prepare Repository:**
@@ -245,7 +245,7 @@
    ```bash
    git push -u origin master
    ```
-   - Enter your **GitHub username**: `hitesh7424`
+   - Enter your **GitHub username**: `userName`
    - Enter your **Personal Access Token (PAT)** as the password.
 
 4. **PAT Setup (if needed):**
