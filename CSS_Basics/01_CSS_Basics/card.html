@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      .geist-fnt {
+        font-family: "Geist", serif;
+        font-optical-sizing: auto;
+        /* font-weight: 400; */
+        font-style: normal;
+      }
+      body {
+        background: #c77979;
+      }
+      .box {
+        background-color: rgb(24, 26, 27);
+        width: 400px;
+        /* height: fit-content; */
+        border: 1px transparent white;
+        padding: 20px 20px 0px 20px;
+        border-radius: 1cap;
+      }
+      #card-image {
+        width: 100%;
+        border-radius: 1cap;
+      }
+
+      .title {
+        color: white;
+        font-weight: bolder;
+        font-family: geist;
+        text-wrap: balance;
+        font-size: x-large;
+        margin-top: 10px;
+      }
+      .sep-line{
+        border: 1px solid #ededed;
+        opacity: 0.1;
+        width: 75%;
+        margin-top: 10px;
+
+      }
+      .course-price {
+        /* background-color: bisque; */
+        /* flex: content; */
+        /* align-content: center; */
+        /* float:left; */
+        display: flex;
+        gap: 3%;
+        font-size: medium;
+      }
+      #new-price {
+        color: blue;
+        font-weight: bold;
+        font-family: geist;
+        /* width: fit-content; */
+        display: inline-block;
+      }
+      #old-price {
+        color: grey;
+        font-weight: bold;
+        font-family: geist;
+        /* width: fit-content; */
+        display: inline-block;
+        text-decoration: line-through;
+      }
+      #discount {
+        color: white;
+        font-weight: bold;
+        font-family: geist;
+        background-color: #1dd1a1;
+        border-radius: 0.4cap;
+        padding: 3px 7px;
+        /* width: fit-content; */
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="HW_card.png" alt="Card" /> -->
+
+    <div class="box">
+      <img id="card-image" src="image.webp" alt="image of Card" />
+      <div class="title">Web Development Master Course @dot 1.0 Batch</div>
+<div class="sep-line"></div>
+      <div class="course-price">
+        <p id="new-price">₹3499</p>
+        <p id="old-price">₹6999</p>
+        <p id="discount">50% off</p>
+      </div>
+    </div>
+  </body>
+</html>

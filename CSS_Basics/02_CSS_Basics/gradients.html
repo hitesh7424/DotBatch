@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Gradients</title>
+  </head>
+  <style>
+    .box {
+      border: 1px solid black;
+      height: 200px;
+      width: 150px;
+      background: linear-gradient(45deg, red, blue) top left / 25% 25% repeat;
+      /* background-image: linear-gradient(to right, red, blue);
+      background-image: linear-gradient(to top right, red, blue);
+      background-image: linear-gradient(to bottom right, red, blue, green);
+      background-image: linear-gradient(45deg, red, blue, green);
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.2),
+        rgba(0, 0, 255, 1)
+      ); */
+    }
+    .myr {
+      margin: 10px;
+      border: 1px solid black;
+      height: 200px;
+      width: 150px;
+      background-image: radial-gradient(red, blue, orange);
+      background-image: radial-gradient(circle, red, blue, orange);
+      background-image: radial-gradient(circle, red 1%, blue 10%, orange);
+    }
+    .conicgrad {
+      border: 1px solid black;
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      background-image: conic-gradient(red, green, blue, aqua, black, red);
+      background-image: conic-gradient(
+        from 20deg,
+        red,
+        green,
+        blue,
+        aqua,
+        black,
+        red
+      );
+      background-image: conic-gradient(from 20deg, red, green);
+      background-image: conic-gradient(from 20deg at 0% 20%, red, green);
+      background-image: conic-gradient(
+        red 36deg,
+        yellow 36deg 170deg,
+        orange 170deg
+      );
+    }
+    .checkbox {
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+
+      background: conic-gradient(
+          #fff 0.25turn,
+          #000 0.25turn 0.5turn,
+          #fff 0.5turn 0.75turn,
+          #000 0.75turn
+        )
+        top left / 25% 25% repeat;
+      border: 1px solid;
+    }
+    .in-flag{
+      height: 200px;
+      width: 200px;
+      background: linear-gradient(orange,white,green);
+    }
+  </style>
+  <body>
+    <div class="box">This is a DIV Element</div>
+    <div class="myr">Radial Gradient</div>
+    <div class="conicgrad">Conic Gradient</div>
+    <div class="checkbox">hi</div>
+    <div class="in-flag">Indian Flag</div>
+  </body>
+</html>
