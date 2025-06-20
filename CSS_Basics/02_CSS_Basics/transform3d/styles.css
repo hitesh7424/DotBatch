@@ -1,0 +1,32 @@
+/* Base box styling */
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Untransformed box */
+.box-static {
+  /* No transform */
+}
+
+/* Translated in 3D space */
+.box-translated {
+  transform: perspective(200px) translateZ(-50px);
+}
+
+/* Rotated in 3D */
+.box-rotated {
+  margin-left: 300px;
+  transform: rotateZ(45deg);
+  /* Try this for deeper effect:
+  transform: perspective(350px) scaleZ(1.2) rotateZ(30deg) rotateX(15deg) rotateY(45deg);
+  */
+}
