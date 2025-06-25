@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>My Gallery</h1>
+            <div id="gallery" class="gallery">
+                <!-- <figure class="card">
+                    <img src="images/images (1).jpg" alt="">
+                    <figcaption>Image (1)</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/images (2).jpg" alt="">
+                    <figcaption>Image (2)</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/images (3).jpg" alt="">
+                    <figcaption>Image (3)</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/images (4).jpg" alt="">
+                    <figcaption>Image (4)</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/images (5).jpg" alt="">
+                    <figcaption>Image (5)</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/images (6).jpg" alt="">
+                    <figcaption>Image (6)</figcaption>
+                </figure> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('images/images.txt')
+            .then(response => response.text())
+            .then(data => {
+                const filenames = data.trim().split('\n').filter(Boolean);
+                const gallery = document.querySelector(".gallery");
+
+                filenames.forEach((filename) => {
+                    const figure = document.createElement("figure");
+                    figure.className = "card";
+
+                    const img = document.createElement("img");
+                    img.src = `images/${filename}`;
+                    img.alt = filename;
+
+                    const caption = document.createElement("figcaption");
+                    caption.textContent = filename.split('.')[0];
+
+                    figure.appendChild(img);
+                    figure.appendChild(caption);
+                    gallery.appendChild(figure);
+                });
+            })
+            .catch(error => console.error('Error loading images.txt:', error));
+
+    </script>
+
+</body>
+
+</html>
