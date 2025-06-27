@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10px;
+    padding: 5px;
+    height: 700px;
+    width: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+    /* overflow: hidden; */
+
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(3, 100px);
+
+    /* justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between; */
+
+    /* align-items: start;
+    align-items: end;
+    align-items: baseline;
+    align-items: stretch; */
+
+    /* align-content: start;
+    align-content: space-between;
+    align-content: space-evenly;
+    align-content: space-around; */
+
+    /* justify-content: center;
+    align-content: center;
+    place-content: center; */
+
+    justify-items: center;
+    align-items: center;
+    place-items: center;
+
+}
+
+.box {
+    text-align: center;
+    align-content: center;
+    border: 1px solid red;
+    background-color: aqua;
+    /* height: 100px; */
+    /* width: 100px; */
+}
+
+#box1 {
+    /* justify-self: start;
+    justify-self: end;
+    justify-self: center;
+
+    align-self: center;
+} */
