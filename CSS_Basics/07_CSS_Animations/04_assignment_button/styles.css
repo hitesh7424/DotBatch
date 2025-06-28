@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.btn {
+    border: 1px;
+    background-color: red;
+    padding: 10px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 0px grey;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.covr {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+
+.btn:hover {
+    .covr {
+        width: 100%;
+    }
+}
